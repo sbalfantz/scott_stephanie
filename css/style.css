@@ -1,0 +1,209 @@
+.toggle-button {
+  	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 20px;
+	height: 20px;
+  }
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: #F1F0DF;
+	border-radius: 10px;
+}
+
+  .wrap {
+    text-wrap: pretty;
+  } 
+   h1 {
+        font-family: 'Alex Brush', cursive;
+        font-size: 64px;
+        text-align: center;
+	color: #F1F0DF;
+	
+    }
+    h2 {
+        font-family: 'Alex Brush', cursive;
+	font-size: 32px;
+	text-align: start;
+	color: #F1F0DF;
+
+    }
+    h3 {
+        font-family: 'Alex Brush', cursive;
+	font-size: 32px;
+	text-align: center;
+	color: #F1F0DF;
+	text-decoration: underline;
+
+    }
+    p {
+        font-family: 'EB Garamon', medium;
+	font-size: 20px;
+	text-align: center;
+	color: #F1F0DF;
+    }
+    body {
+      background-color: #3E4336;
+    }
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3E4336;
+	color: #F1F0DF;
+ }
+
+.navbar-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3E4336;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links li {
+  float: left;
+}
+
+.navbar-links li a {
+  display: block;
+  color: #F1F0DF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover {
+  background-color: #F1F0DF;
+  color: #3E4336;
+}
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      /* Optional: Add some padding/margin around the marquee */
+      padding: 0px 0;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 30s linear infinite;
+    }
+
+    .marquee-track a {
+      display: inline-block;
+      /* Add some space between images */
+      margin-right: 0px; 
+    }
+
+    .marquee-track img {
+      /* Base image height set using viewport height (vh) 
+         e.g., 50vh is 50% of the viewport height */
+      height: 100vh; 
+      /* Optional: Set a max-height to prevent images from becoming too large on huge screens */
+      max-height: 400px; 
+      width: auto; /* Maintain aspect ratio */
+      vertical-align: middle;
+      margin: 0; /* Removed explicit margin */
+    }
+
+    /* --- Media Queries for Different Screen Sizes --- */
+
+    /* For smaller screens */
+    @media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+	
+      .marquee-track img {
+        /* Reduce size for smaller screens */
+        height: 100vh;
+        max-height: 400px;
+      }
+      .marquee-track a {
+        /* Reduce space between images */
+        margin-right: 0px;
+      }
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+    /* For screens larger than 1200px (e.g., large desktops) */
+    @media (min-width: 1210px) {
+      .marquee-track img {
+        /* Increase size for larger screens */
+        height: 100vh;
+        max-height: 700px;
+      }
+      .marquee-track a {
+        /* Increase space between images */
+        margin-right: 0px;
+      }
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
