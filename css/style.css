@@ -15,27 +15,35 @@
 	background-color: #F1F0DF;
 	border-radius: 10px;
 }
+hr {
+  height: 3px;
+  background-color:  #F1F0DF;
+  border: none;
+  width: 90%;
+  margin: 5px auto;
+  
+}
 
   .wrap {
     text-wrap: pretty;
   } 
    h1 {
-        font-family: 'Alex Brush', cursive;
-        font-size: 64px;
+        font-family: 'Alex Brush';
+        font-size: 48pt;
         text-align: center;
 	color: #F1F0DF;
 	
     }
     h2 {
-        font-family: 'Alex Brush', cursive;
-	font-size: 32px;
+        font-family: 'Alex Brush';
+	font-size: 24pt;
 	text-align: start;
 	color: #F1F0DF;
 
     }
     h3 {
-        font-family: 'Alex Brush', cursive;
-	font-size: 32px;
+        font-family: 'Alex Brush';
+	font-size: 24pt;
 	text-align: center;
 	color: #F1F0DF;
 	text-decoration: underline;
@@ -43,7 +51,7 @@
     }
     p {
         font-family: 'EB Garamon', medium;
-	font-size: 20px;
+	font-size: 12pt;
 	text-align: center;
 	color: #F1F0DF;
     }
@@ -185,7 +193,35 @@
   flex: 33.33%;
   padding: 5px;
 }
-    /* For screens larger than 1200px (e.g., large desktops) */
+
+.link a:link, a:visited {
+  display: flex;
+  justify-content: center;
+  background-color: #F1F0DF;
+  color:  #3E4336;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.link a:hover, a:active {
+  color: #F1F0DF;
+  background-color: #3E4336;
+}
+
+.circle-list {
+	list-style-type: circle;
+}
+.circle-list li{
+        font-family: 'EB Garamon', medium;
+	font-size: 12pt;
+	text-align: justify;
+	color: #F1F0DF;
+	margin-left: 50px;
+
+}
+/* For screens larger than 1200px (e.g., large desktops) */
     @media (min-width: 1210px) {
       .marquee-track img {
         /* Increase size for larger screens */
