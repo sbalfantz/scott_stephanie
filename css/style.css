@@ -39,8 +39,10 @@ hr {
     h2 {
         font-family: 'Alex Brush';
 	font-size: 24pt;
-	text-align: start;
+	text-align: center;
 	color: #F1F0DF;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
     }
     h3 {
@@ -174,6 +176,21 @@ hr {
       }
     }
 
+    .map-container {
+        display: flex;
+        /* You can set a specific height for the container, or let it be defined by its parent */
+        height: 400px; /* Example height */
+        width: 100%; /* Example width to make it span full width */
+    }
+
+    .map-container iframe {
+        flex: 1; /* This makes the iframe expand to fill the available space */
+        width: 100%; /* Ensure iframe uses full width within its flex context */
+        height: 100%; /* Ensure iframe uses full height within its flex context */
+        border: 0; /* Remove default iframe border */
+    }
+
+    
     /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
