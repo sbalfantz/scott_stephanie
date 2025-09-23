@@ -63,6 +63,23 @@ hr {
       background-color: #3E4336;
     }
 
+   .container{
+	 align-content: center;
+         background-color: #3E4336;
+   }
+    .form-container {
+	align-content: center;
+        display: flex;
+	max-width: 500px;
+        padding: 10px 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #3E4336;
+      }
+      .form-group label{
+      font-family: 'EB Garamon', medium;
+      color: #F1F0DF;
+      }
+
 .navbar {
 	display: flex;
 	justify-content: center;
